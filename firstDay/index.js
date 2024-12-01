@@ -14,6 +14,8 @@ fs.readFile("./input.txt", "utf-8", (err, data) => {
       arr2.push(parseInt(numbers[1])); // Ikkinchi sonni array2 ga qo'shish
     }
   });
+
+  // first star question
   function findDistance(array1, array2) {
     array1.sort((a, b) => a - b);
     array2.sort((a, b) => a - b);
@@ -25,6 +27,8 @@ fs.readFile("./input.txt", "utf-8", (err, data) => {
     }
     return distance;
   }
+
+  // second star question
   function secondQuestion(array1, array2) {
     let total = 0;
     for (let i = 0; i < array1.length; i++) {
